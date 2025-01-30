@@ -1,112 +1,40 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    list-style: none;
-    outline: none;
-}
-
-:root
-{
-    --header-bg-color: #000000;
-    --text-color: #ffff;
-    --bg-color: #111111;
-    --hover-color: #2e2e2e;
-}
-
-.header-bg
-{
-    background-color: var(--header-bg-color);
-}
-
-.header
-{
-    display: flex;
-    justify-content: space-between;
-    gap: 1.25rem;
-    align-items: center;
-    padding: 1.25rem;
-    max-width: 75rem;
-    margin: 0 auto;
-}
-
-.header-menu
-{
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.header-menu a
-{
-    display: inline-block;
-    color: var(--text-color);
-    font-size: 1.125rem;
-    padding: 1rem 0;
-    font-size: 1.125rem;
-    position: relative;
-
-}
-
-.header-menu a:after
-{
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0;
-    background: var(--text-color);
-    margin-top: 0.25rem;
-    transition: 0.3s;
-    position: absolute;
-}
-
-.header-menu a:hover:after
-{
-    width: 100%;
-}
+@import "/css/global/global.css";
+@import "/css/utilidades/tipografia.css";
+@import "/css/utilidades/cores.css";
 
 
-@media(max-width: 50rem)
-{
-    .header-menu
-    {
-        gap: 1.25rem
-    }
+@import "/css/global/header.css";
+@import "/css/global/footer.css";
 
-    .header-menu a
-    {
-        background: var(--bg-color);
-        padding: 1rem 1.25rem;
-        border-radius: 4px;
-    }
+/* Utilidades */
+@import "/css/utilidades/componentes.css";
+@import "/css/utilidades/formulario.css";
 
-    .header-menu a:hover
-    {
-        background: var(--hover-color);
-    }
-     .header-menu a:after{
-        display: none;
-     }
+/* Home */
+@import "/css/home/introducao.css";
+@import "/css/home/tecnologia.css";
+@import "/css/home/parceiros.css";
+@import "/css/home/depoimento.css";
 
-    .header-menu a:hover
-    {
-        border-color: var(--text-color);
-    }
-}
+/* Bicicletas */
+@import "/css/global/bicicletas/bicicletas-lista.css";
+@import "/css/global/bicicletas/bicicleta.css";
 
-@media(max-width: 37.5rem)
-{
-    .header-menu
-    {
-        gap: 0.75rem;
-    }
+/* Bicicleta */
+@import "/css/bicicleta/bicicleta.css";
+@import "/css/bicicleta/seguros.css";
 
-    .header-menu a
-    {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.875rem;
-    }
-}
+/* Seguros */
+@import "/css/seguros/seguros.css";
+@import "/css/seguros/vantagens.css";
+@import "/css/seguros/perguntas.css";
+
+/* Contato */
+@import "/css/contato/contato.css";
+@import "/css/contato/loja.css";
+
+/* Contato */
+@import "/css/orcamento/orcamento.css";
+
+/* Termos */
+@import "/css/termos/termos.css";
